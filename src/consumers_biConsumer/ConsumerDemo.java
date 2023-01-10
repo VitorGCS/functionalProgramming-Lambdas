@@ -1,4 +1,4 @@
-package consumers_BiConsumer;
+package consumers_biConsumer;
 
 import model.DefaultProduct;
 import model.Product;
