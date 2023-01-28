@@ -13,7 +13,7 @@ public class GenericDemo3<T> {
     }
 
     public static void main(String[] args) {
-        GenericDemo3<Integer> integerBox = new GenericDemo3<Integer>();
+        GenericDemo3<Integer> integerBox = new GenericDemo3<>();
         GenericDemo3<String> stringBox = new GenericDemo3<>();
 
         integerBox.set(10);

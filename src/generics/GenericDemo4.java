@@ -29,7 +29,9 @@ public class GenericDemo4 {
 
     public static void processParentElements(List<Parent> parents) {}
 
-    // Upper bound with wild cards - used to read elements from the List
+    /*
+    * IMP:  Upper bound with wild cards - used to read elements from the List
+    */
     public static void processElements(List<? extends Parent> elements) {
         Parent parent = elements.get(0);
 //		Child child = elements.get(0); // compilation error
@@ -41,7 +43,9 @@ public class GenericDemo4 {
         elements.add(null);
     }
 
-    //Lower bound whit wild cards - used to add elements to the List
+    /*
+    * IMP: Lower bound whit wild cards - used to add elements to the List
+    */
     public static void processElements2(List<? super Child> elements) {
         Object element = elements.get(0);
 //		Child parentElement = elements.get(0); // compilation error
@@ -59,7 +63,6 @@ public class GenericDemo4 {
 class Parent {}
 
 class Child extends Parent {
-
     public void childSpecificMethod() {}
 }
 

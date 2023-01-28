@@ -15,8 +15,12 @@ public class GenericDemo2 {
                 "Acura", "Aston Martin", maxValue("Audi", "Acura", "Aston Martin"));
     }
 
-    // Example of multiple bounds
+    /* Example of multiple bounds
+    -> Comparable<T>
+    -> Comparator<T>
+    */
 //	public static <T extends Comparable<T> & Comparator<T>> T maxValue(T x, T y, T z) {
+
 
     public static <T extends Comparable<T>> T maxValue(T x, T y, T z) {
         T max = x; // assume x is initially the largest

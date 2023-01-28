@@ -11,9 +11,9 @@ public class GenericDemo5 {
         List list = new ArrayList();
         list = integers;
         list.add("some string");
+        //list.add(1);
 
         Integer integer = integers.get(0);
         System.out.println(integer);
-
     }
 }
